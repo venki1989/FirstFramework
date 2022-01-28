@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SOX Test Cases]">
+  <test thread-count="5" name="Creation of cycle(failed)">
+    <classes>
+      <class name="MavenFramework.CreateCycle">
+        <methods>
+          <include name="SelectOwner"/>
+          <include name="EnterRTFData"/>
+          <include name="SelectRestricdropDown"/>
+          <include name="SelecyOrganizationArea"/>
+          <include name="SelectComplianceDomain"/>
+          <include name="EnterCycleName"/>
+          <include name="tearDown"/>
+          <include name="SelectMRC"/>
+          <include name="SelectActionDropDown"/>
+          <include name="SubmitForm"/>
+        </methods>
+      </class> <!-- MavenFramework.CreateCycle -->
+    </classes>
+  </test> <!-- Creation of cycle(failed) -->
+</suite> <!-- Failed suite [SOX Test Cases] -->

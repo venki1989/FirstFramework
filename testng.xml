@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sox Sanity">
+	<listeners>
+		<listener class-name="MavenFramework.listener"></listener>
+		<listener class-name="Resources.ExtentReporterNG"></listener>
+	</listeners>
+	<test thread-count="1" name="Creation of Cycle" preserve-order="true">
+		<classes>
+			<class name="MavenFramework.CreateCycle" />
+		</classes>
+	</test>
+	<test thread-count="1" name="Validate Sox Cycle report" preserve-order="true">
+		<classes>
+			<class name="MavenFramework.SoxCycleReport" />
+		</classes>
+	</test>
+	<test thread-count="1" name="Creation of Process" preserve-order="true">
+		<classes>
+			<class name="MavenFramework.CreateProcess" />
+		</classes>
+	</test>
+		<test thread-count="1" name="Link Cycle in MRC form" preserve-order="true">
+		<classes>
+			<class name="MavenFramework.AddMRCForm" />
+		</classes>
+	</test>
+	<test thread-count="1" name="Validate process list report" preserve-order="true">
+		<classes>
+			<class name="MavenFramework.ProcessListReport" />
+		</classes>
+	</test>
+	<test thread-count="1" name="Creation of Objective" preserve-order="true">
+		<classes>
+			<class name="MavenFramework.CreateObjective" />
+		</classes>
+	</test>
+	<test thread-count="1" name="Creation of control activity" preserve-order="true">
+		<classes>
+			<class name="MavenFramework.CreateActivity" />
+		</classes>
+	</test>
+	<!-- Validate Sox Sanity work flow -->
+</suite> <!-- Sox Sanity -->

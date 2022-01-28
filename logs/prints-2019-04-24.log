@@ -1,0 +1,7 @@
+20:04:08.124 [main] INFO  Resources.base - The Cycle name in the report is displayed correctly
+20:04:08.454 [main] INFO  Resources.base - The Cycle OwnerOrg in the report is displayed correctly
+20:04:08.605 [main] INFO  Resources.base - The Cycle Owner in the report is displayed correctly
+20:07:24.219 [main] INFO  Resources.base - divcollect size :0
+20:07:24.268 [main] INFO  Resources.base - mytask coming here false btnflg :true
+20:07:24.296 [main] INFO  Resources.base - link2  size 10
+20:07:24.478 [main] INFO  Resources.base - tblcollect size :10

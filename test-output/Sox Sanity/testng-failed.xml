@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sox Sanity]">
+  <listeners>
+    <listener class-name="MavenFramework.listener"/>
+    <listener class-name="Resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Validate Sox Cycle report(failed)">
+    <classes>
+      <class name="MavenFramework.SoxCycleReport">
+        <methods>
+          <include name="VerifyCycleNameColumn"/>
+          <include name="VerifyCycleOwnerColumn"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MavenFramework.SoxCycleReport -->
+    </classes>
+  </test> <!-- Validate Sox Cycle report(failed) -->
+  <test thread-count="5" name="Validate process list report(failed)">
+    <classes>
+      <class name="MavenFramework.ProcessListReport">
+        <methods>
+          <include name="VerifyOwnerOrgColumn"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MavenFramework.ProcessListReport -->
+    </classes>
+  </test> <!-- Validate process list report(failed) -->
+</suite> <!-- Failed suite [Sox Sanity] -->

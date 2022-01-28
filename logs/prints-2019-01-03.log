@@ -1,0 +1,11 @@
+20:35:53.874 [main] INFO  Resources.base - divcollect size :0
+20:35:53.923 [main] INFO  Resources.base - mytask coming here false btnflg :true
+20:35:53.948 [main] INFO  Resources.base - link2  size 10
+20:35:54.050 [main] INFO  Resources.base - tblcollect size :10
+20:35:54.097 [main] INFO  Resources.base - coming here 
+20:35:58.773 [main] ERROR Resources.base - Expected condition failed: waiting for alert to be present (tried for 1 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MSI-L907', ip: '172.27.25.145', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\VENKAT~1.M\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57440}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 08cd508c0c326d6e388ebe027e9a8ba1

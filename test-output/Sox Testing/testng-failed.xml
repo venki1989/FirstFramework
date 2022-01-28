@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sox Testing]">
+  <listeners>
+    <listener class-name="MavenFramework.listener"/>
+    <listener class-name="Resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Verify Sox Cycle report(failed)">
+    <classes>
+      <class name="MavenFramework.SoxCycleReport">
+        <methods>
+          <include name="VerifyCycleOwnerColumn"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MavenFramework.SoxCycleReport -->
+    </classes>
+  </test> <!-- Verify Sox Cycle report(failed) -->
+  <test thread-count="5" name="Verify Sox Process report(failed)">
+    <classes>
+      <class name="MavenFramework.ProcessListReport">
+        <methods>
+          <include name="VerifyOwnerOrgColumn"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MavenFramework.ProcessListReport -->
+    </classes>
+  </test> <!-- Verify Sox Process report(failed) -->
+  <test thread-count="5" name="Create MRC Object(failed)">
+    <classes>
+      <class name="MavenFramework.AddMRCForm">
+        <methods>
+          <include name="LoginApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MavenFramework.AddMRCForm -->
+    </classes>
+  </test> <!-- Create MRC Object(failed) -->
+</suite> <!-- Failed suite [Sox Testing] -->

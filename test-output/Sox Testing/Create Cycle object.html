@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>TestNG:  Create Cycle object</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Create Cycle object</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 30 16:11:10 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>433 seconds (433415 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MavenFramework.CreateCycle.Approve()'><b>Approve</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>2</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.Clarification()'><b>Clarification</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>10</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.Clarification2()'><b>Clarification2</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>10</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterCommentText()'><b>EnterCommentText</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>11</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterCommentText1()'><b>EnterCommentText1</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>11</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterCommentText11()'><b>EnterCommentText11</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>11</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterCommentText12()'><b>EnterCommentText12</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>11</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterCycleName()'><b>EnterCycleName</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>18</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterRTFData()'><b>EnterRTFData</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>25</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterUntillDate()'><b>EnterUntillDate</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>13</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterValidFromDate()'><b>EnterValidFromDate</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>11</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterWithApprover()'><b>EnterWithApprover</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>3</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.EnterWithClarifier()'><b>EnterWithClarifier</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>2</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.LoginApplication()'><b>LoginApplication</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>39</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.RequestForClarification()'><b>RequestForClarification</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>10</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SaveDraftForm()'><b>SaveDraftForm</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>10</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SaveForm()'><b>SaveForm</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>3</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectActionDropDown()'><b>SelectActionDropDown</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>10</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectApplicableTechnology()'><b>SelectApplicableTechnology</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>15</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectComplianceDomain()'><b>SelectComplianceDomain</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>15</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectMRC()'><b>SelectMRC</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>15</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectMyTask()'><b>SelectMyTask</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>20</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectMyTask1()'><b>SelectMyTask1</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>22</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectMyTask2()'><b>SelectMyTask2</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>20</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectMyTask3()'><b>SelectMyTask3</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>24</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectOrganizationArea()'><b>SelectOrganizationArea</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>15</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectOwner()'><b>SelectOwner</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>25</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SelectRestricdropDown()'><b>SelectRestricdropDown</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>10</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SubmitForm()'><b>SubmitForm</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>6</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SubmitForm2()'><b>SubmitForm2</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>6</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SubmitForm3()'><b>SubmitForm3</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>8</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+<tr>
+<td title='MavenFramework.CreateCycle.SubmitForm4()'><b>SubmitForm4</b><br>Test class: MavenFramework.CreateCycle</td>
+<td></td>
+<td>6</td>
+<td>MavenFramework.CreateCycle@34b7ac2f</td></tr>
+</table><p>
+</body>
+</html>

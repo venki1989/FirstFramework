@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium Framework test suit]">
+  <listeners>
+    <listener class-name="MavenFramework.listener"/>
+    <listener class-name="Resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Verify Title on the home page(failed)">
+    <classes>
+      <class name="MavenFramework.ValidateTitle">
+        <methods>
+          <include name="getTitle"/>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MavenFramework.ValidateTitle -->
+    </classes>
+  </test> <!-- Verify Title on the home page(failed) -->
+</suite> <!-- Failed suite [Selenium Framework test suit] -->

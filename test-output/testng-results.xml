@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54455" started-at="2019-04-29T11:26:00Z" finished-at="2019-04-29T11:26:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54455" started-at="2019-04-29T11:26:00Z" finished-at="2019-04-29T11:26:54Z">
+      <class name="MavenFramework.AppTest">
+        <test-method status="PASS" signature="OpenMRC()[pri:1, instance:MavenFramework.AppTest@31304f14]" name="OpenMRC" duration-ms="54368" started-at="2019-04-29T11:26:00Z" finished-at="2019-04-29T11:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenMRC -->
+      </class> <!-- MavenFramework.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
