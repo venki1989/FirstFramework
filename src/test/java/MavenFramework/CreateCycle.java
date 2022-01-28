@@ -19,7 +19,7 @@ public class CreateCycle extends base {
 	public static Logger log=LogManager.getLogger(base.class.getName());
 	CycleFormObject cycle=null;
 	ExcelUtils data = new ExcelUtils();
-	ExtentReporterNG report = new ExtentReporterNG();
+	ExtentReporterNG report = null;
 
 	@Test(priority=1)
 	public void LoginApplication() throws IOException, InterruptedException

@@ -1,24 +1,12 @@
 package pageObjects;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import Resources.base;
 
 public class CommanActions {
@@ -52,7 +40,17 @@ public class CommanActions {
 	By ContinueButton=By.xpath(".//*[@id='ext-gen12']");
 	By DateClickAway=By.xpath("//span[@id='MSAI_23']");
 	By MyTaskSelection = By.cssSelector("*[class*=' x-btn-text todoIcon']");
-	By LogOut = By.xpath("//button[@id='ext-gen56']");
+	
+	@FindBy(xpath = "//button[@id='ext-gen56']")
+	WebElement LogOut;
+	
+	//By LogOut = By.xpath("//button[@id='ext-gen56']");
+	
+	public CommanActions(WebDriver driver) {
+	    this.driver=driver;
+		PageFactory.initElements(driver, this);
+				
+	}
 
 
 	public void GetEventId() throws InterruptedException 
@@ -84,9 +82,9 @@ public class CommanActions {
 	}
 
 
-	public WebElement Logout()
+	public void Logout()
 	{
-		return this.driver.findElement(LogOut);	
+		LogOut.click();	
 	}
 }
 

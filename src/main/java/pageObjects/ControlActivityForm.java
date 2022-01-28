@@ -86,7 +86,7 @@ public class ControlActivityForm {
 
 	public WebElement CycleObject()
 	{
-		return this.driver.findElement(CycleObject);
+		return driver.findElement(CycleObject);
 
 
 	}

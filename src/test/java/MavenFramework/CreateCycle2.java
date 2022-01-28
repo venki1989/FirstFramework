@@ -19,7 +19,7 @@ public class CreateCycle2 extends base {
 	public static Logger log=LogManager.getLogger(base.class.getName());
 	CycleFormObject cycle=null;
 	ExcelUtils data = new ExcelUtils();
-	ExtentReporterNG report = new ExtentReporterNG();
+	ExtentReporterNG report = null;
 	ArrayList<String>value = null;
 	//metricLoginUI login=new metricLoginUI(driver);
 

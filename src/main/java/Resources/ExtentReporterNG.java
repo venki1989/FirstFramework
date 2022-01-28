@@ -18,16 +18,15 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.xml.XmlSuite;
 
-import com.aventstack.extentreports.IReport;
+import com.aventstack.extentreports.model.Report;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.IReporter;
 import com.relevantcodes.extentreports.LogStatus;
-import com.relevantcodes.extentreports.Report;
 import com.relevantcodes.extentreports.converters.ReportParser;
 import com.relevantcodes.extentreports.model.Test;
 
-public class ExtentReporterNG implements IReporter {
+public abstract class ExtentReporterNG implements IReporter {
 	public ExtentReports extent;
 	public Properties properties; 
 
@@ -103,32 +102,37 @@ public class ExtentReporterNG implements IReporter {
 
 	public void start() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void stop() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void flush() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void addTest(Test test) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void setTestRunnerLogs() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void start(ReportParser report) {
 		// TODO Auto-generated method stub
-		
+
+	}
+
+	public void start(Report report) {
+		// TODO Auto-generated method stub
+
 	}
 
 

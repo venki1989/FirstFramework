@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.OutputType;
@@ -40,6 +41,7 @@ public class base {
 			driver=new InternetExplorerDriver();
 		}
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver; // Return so that any class can use this methods/objects
 
 
